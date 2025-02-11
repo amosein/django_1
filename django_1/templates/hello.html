@@ -5,8 +5,10 @@
     <title>salam</title>
 </head>
 <body>
-
-<h3> hello user </h3>
+    {% if name == "admin" %}
+        <p> Sorry ... </p>
+    {% endif %}
+<h3> Hello Mr {{ name|upper }} {{ last_name }} </h3>
 
 </body>
 </html>

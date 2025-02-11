@@ -7,4 +7,5 @@ def home(request):
     return render(request, "home.html")
 
 def say_hello(request):
-    return render(request, "hello.html")
+    person = {"name": "admin", "last_name": "Razavi"}
+    return render(request, "hello.html", context=person)
